@@ -1,0 +1,131 @@
+$Paleblue: hsl(225, 100%, 94%);
+$Brightblue: hsl(245, 75%, 52%);
+$Verypaleblue: hsl(225, 100%, 98%) ;
+$Desaturatedblue: hsl(224, 23%, 55%) ;
+$Darkblue: hsl(223, 47%, 23%);
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+body {
+    text-align: center;
+    position: relative;
+    background-color:$Paleblue ;
+    height: 100vh;
+    width: 100vw;
+    font-family: 'Red Hat Display', sans-serif;
+}
+main {
+    width: 100%;
+    height: 60%;
+    margin: 0 auto;
+    position: relative;
+    background: url("../images/pattern-background-desktop.svg") center/cover;
+}
+.card-container {
+    min-height: 600px;
+    width: 30%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: grid;
+    grid-template-rows: 30% 70%;
+}
+.img-container {
+    width: 90%;
+    margin: 0 auto;
+}
+#img {
+    width: 100%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+.lower-card {
+    display: grid;
+    grid-template-rows: 40% 30% 30%;
+    width: 90%;
+    margin: 0 auto;
+    background-color: white;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px; 
+    padding: 25px;
+}
+.text-container {
+    padding: 10px 0 ;
+}
+.text-container h1 {
+    font-size: 1.6em;
+    font-weight: 900;
+    color: $Darkblue;
+}
+.text-container p {
+    padding: 20px 0;
+    font-weight: 400;
+    color: $Desaturatedblue;
+    font-size: 1em;
+}
+.price-container {
+    height: 80%;
+    border-radius: 15px;
+    width: 100%;
+    margin: 0 auto;
+    background-color: $Verypaleblue;
+    align-items: center;
+   display: grid;
+   grid-template-columns: 50% 50%;
+}
+#ul {
+    padding-left: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+#ul p {
+    padding: 5px 0;
+    color: $Desaturatedblue;
+}
+#span {
+    padding: 10px 0;
+    font-weight: 900;
+    color: $Darkblue;
+}
+#link {
+    text-align: right;
+    padding-right: 15px;
+    text-decoration: underline;
+    transition: 0.3s ease;
+}
+#link:hover {
+    text-decoration: none;
+}
+#link a:hover {
+  opacity: 0.7;
+}
+button {
+    background-color: $Brightblue;
+    border: none;
+    width: 100%;
+    height: 45px;
+    color: white;
+    border-radius: 9px;
+    font-weight: 700;
+    font-size: 0.8em;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+button:hover {
+    opacity: 0.7;
+}
+.btn-container  {
+ display: flex;
+ flex-wrap: wrap;
+ justify-content: center;
+ align-items: center;
+}
+.btn-container a:hover {
+    color: black;
+}
